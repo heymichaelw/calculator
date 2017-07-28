@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <form action="/">
+        <input type="number" step="any" name="firstNum" />
+        <select name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" step="any" name="secondNum" />
+        <input type="submit" value="Calculate" />
+    </form>
+    <h3 th:text="${calcModel}"></h3>
+</body>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>
